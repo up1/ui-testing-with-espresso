@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.somkiat.helloworld.MainActivity">
+
+    <Button
+        android:text="Hello"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:id="@+id/hello_button"
+        android:onClick="helloWorld"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        app:layout_constraintTop_toTopOf="@+id/activity_main"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_main" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        app:layout_constraintTop_toBottomOf="@+id/hello_button"
+        android:layout_marginTop="56dp"
+        app:layout_constraintRight_toRightOf="@+id/activity_main" />
+
+</android.support.constraint.ConstraintLayout>
